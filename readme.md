@@ -67,4 +67,5 @@ FROM = "<Twilio trial number>"
 3. The script will run and you can exit it anytime by pressing ```Ctrl + C```
 ![Usage](./img/usage.jpg)
 4. Sample message below:
+
 ![Message](./img/msg.jpg)
