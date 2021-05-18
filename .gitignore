@@ -1,0 +1,8 @@
+__pycache__
+.ipynb_checkpoints
+ipynb
+Old Code
+vaccenv
+geckodriver.log
+consts.py
+requirements AMJ.txt
