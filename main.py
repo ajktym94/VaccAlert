@@ -30,21 +30,25 @@ def take_input():
     response = requests.get("https://cdn-api.co-vin.in/api/v2/admin/location/districts/"+str(ids["state"]), headers=headers).json()
     
     district_list = [(district["district_id"], district["district_name"]) for district in response["districts"]]
+    print("\n")
     for district in district_list:
         print(f'{district[0]}. {district[1]}')    
     ids["district"] = int(input("\nEnter District index from the list: "))
     inputs["district"] = [district[1] for district in district_list if district[0]==ids["district"]][0]
 
     ####### GET LIST OF PREFERRED CENTRES
+    print("\n")
     inputs["centres"] = input("Enter preferred centres (Format: Kallara, Kaipuzha):").split(', ')
     
     ####### GET PHONE NUMBER TO BE NOTIFIED    
+    print("\n")
     inputs["phone"] = "+91"+input("Enter the number to which alert to be sent (10 digits): ")
     if len(inputs["phone"]) != 13:
         print("Invalid number. Exiting...")
         exit()
 
     ####### GET AGE LIMIT    
+    print("\n")
     age_choice = input("Enter the age limit:\n1. 18-44\n2. 45+\nChoice (1 or 2): ")
     if age_choice == "1":
         inputs["age_limit"] = "18"
@@ -55,6 +59,7 @@ def take_input():
         exit()
 
     ####### GET DOSE CHOICE
+    print("\n")
     inputs["dose_choice"] = input("Enter Dose number (1 or 2): ")
     if inputs["dose_choice"] not in ["1","2"]:
         print("Invalid Choice. Exiting...")
@@ -107,7 +112,7 @@ def find_apps(ids, inputs, flag):
         ####### IF SLOTS FOUND AND NOTIFICATION NOT YET SENT, SEND NOTIFICATION
         if app_list[inputs["age_limit"]] and flag == 0:
             send_notif(inputs, app_list)
-            print(datetime.now().strftime("%d %b, %H:%M") + " Notification sent")
+            print(datetime.now().strftime("%d %b, %H:%M") + " Slots available! Notification sent")
             flag = 1
         ####### IF SLOTS FOUND AND NOTIFICATION ALREADY SENT, DO NOT SEND NOTIFICATION
         elif app_list[inputs["age_limit"]] and flag == 1:
@@ -155,7 +160,7 @@ def mainfunc():
     for i in range(5):
         print(".", end='')
         time.sleep(1)
-
+    print("\n")
     flag = 0
 
     while True:
