@@ -1,7 +1,12 @@
+#Cache
 __pycache__
+
+#Jupyter Notebook
 .ipynb_checkpoints
 ipynb
+
+#Misc files
 Old Code
+
+#Virtual Emvironment
 vaccenv
-geckodriver.log
-requirements AMJ.txt
