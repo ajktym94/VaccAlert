@@ -31,14 +31,12 @@ A COVID-19 vaccine slot availability notifier.
 
 #### Setting Up Twilio
 * Sign Up for Twilio [here](https://www.twilio.com/try-twilio).
-![Sign Up](./img/1_signup.jpg)
+![Sign Up](https://github.com/ajktym94/VaccAlert/blob/images/img/1_signup.jpg?raw=true)
 * Verify your email-id and phone number with Twilio.
 * Obtain a trial number by clicking "Get a Trial Number"
-![Trial Number](./img/2_trial_number.jpg)
-* Add your number at which you wish to be notified as a "Verified Caller ID" by clicking the "#" symbol on the left horizontal bar and then, "Verified Caller IDs" and then the "+" button.
-![Caller ID](./img/3_callerid.jpg)
+![Trial Number](https://github.com/ajktym94/VaccAlert/blob/images/img/2_trial_number.jpg?raw=true)
 * In the end, take note of your trial number, Account SID and Auth Token from your dashboard.
-![Take note](./img/dashboard.jpg)
+![Take note](https://github.com/ajktym94/VaccAlert/blob/images/img/dashboard.jpg?raw=true)
 
 ### Installation
 
@@ -48,16 +46,13 @@ A COVID-19 vaccine slot availability notifier.
 cd VaccAlert
 ```
 3. Run  ```pip install -r requirements.txt```
-4. Google "my user agent" and copy the value
-![User Agent](./img/useragent.jpg)
-5. Create a new file named "consts.py" and enter your user agent, Twilio Account SID, Auth token and trial number in the following format:
+4. Edit file named "consts.py" and enter your Twilio Account SID, Auth token and trial number in the following format:
 ```
-USER_AGENT = "<user agent value you got from Google>"
 ACCOUNT_SID = "<Twilio Account SID>"
 AUTH_TOKEN = "<Twilio Auth Token>"
 FROM = "<Twilio trial number>"
 ```
-6. You are ready to go! 
+5. You are ready to go! 
 
 
 ### Usage
@@ -65,7 +60,7 @@ FROM = "<Twilio trial number>"
 1. Open CMD/Terminal and run ```py main.py```
 2. Enter the required details
 3. The script will run and you can exit it anytime by pressing ```Ctrl + C```
-![Usage](./img/usage.jpg)
+![Usage](https://github.com/ajktym94/VaccAlert/blob/images/img/usage.jpg?raw=true)
 4. Sample SMS below:
 
-![Message](./img/msg.jpg)
+![Message](https://github.com/ajktym94/VaccAlert/blob/images/img/msg.jpg?raw=true)
