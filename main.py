@@ -7,7 +7,7 @@ from datetime import datetime
 from twilio.rest import Client
 
 headers = {
-    "USER_AGENT" : consts.USER_AGENT
+    "USER_AGENT" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
 }
 
 
