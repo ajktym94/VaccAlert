@@ -22,7 +22,7 @@ A COVID-19 vaccine slot availability notifier.
 
  However, the user has to sign up for a trial account with Twilio and then verify their phone number to recieve messages. Users can also be notified with a missed call if needed.
 
- Scroll down to read the installation steps or visit [YouTube](https://youtu.be/5dEM2BATo-M) to watch the video tutorial.
+ Scroll down to read the installation steps or click the image below to watch the [video](https://youtu.be/5dEM2BATo-M) tutorial.
 
  [![Video Thumbnail](http://img.youtube.com/vi/5dEM2BATo-M/0.jpg) ](https://youtu.be/5dEM2BATo-M "Video Thumbnail")
 
