@@ -60,7 +60,7 @@ FROM = "<Twilio trial number>"
 
 1. Open CMD/Terminal and run ```py main.py```
 2. Enter the required details
-3. The script will run and you can exit it anytime by pressing ```Ctrl + C```
+3. The script will run in the background and you can exit it anytime by pressing ```Ctrl + C```
 ![Usage](https://github.com/ajktym94/VaccAlert/blob/images/img/usage.jpg?raw=true)
 4. Sample SMS below:
 
