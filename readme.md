@@ -52,6 +52,7 @@ ACCOUNT_SID = "<Twilio Account SID>"
 AUTH_TOKEN = "<Twilio Auth Token>"
 FROM = "<Twilio trial number>"
 ```
+5. If you need to be notified by call, you can uncomment lines 149-153 of the file ```main.py```
 5. You are ready to go! 
 
 
